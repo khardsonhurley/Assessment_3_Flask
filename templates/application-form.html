@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <head>
+        <title>Skills-Web</title>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+    <body>
+
+    <form action="/application">
+            <h1>Job Application</h1>
+            <div id="instructions">
+            <h3>In order for us to better help you find a job,
+                please enter the following information. 
+            </h3>
+            </div>
+            <br>
+            <div>
+            <label for="firstname"><b>First Name:</b></label>
+                <input id="firstname" type="text" name="firstname" required>
+            &nbsp
+            <label for="lastname"><b>Last Name:</b></label>
+                <input id="lastname" type="text" name="lastname" required>
+            <br>
+            <br>
+            <label for="salary"><b>Salary Requirement:</b></label>
+                <input id="salary" type="text" name="salary" required>
+            </div>
+            <div>
+            <br>
+            <br>
+            <label for="jobtitle"><b>Select the job you wish to apply for: </b></label>
+            
+            <select id="jobtitle" name="jobtitle">
+                <option value ="Software Engineer" >Software Engineer</option>
+                <option value ="QA Engineer">QA Engineer</option>
+                <option value ="Product Manager">Product Manager</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+            </div>
+        </form>
+    </body>
+
+{% endblock %}

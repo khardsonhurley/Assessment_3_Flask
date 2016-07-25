@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<head>
+    <title>Application Response</title>
+     <link rel="stylesheet" href="/static/styles.css"/> 
+     <!-- cant get the styling for this page to work. Will not connect to styles.css. -->
+</head>
+<body>
+    <h1>Confirmation</h1>
+    <div class="confirmation">
+    <p>Thank you, {{ firstname }} {{ lastname }}, for applying to be a {{ job_title }}. Your minimum salary requirement is {{ salary }} dollars.</p>
+    </div>  
+</body>
+
+{% endblock %}
